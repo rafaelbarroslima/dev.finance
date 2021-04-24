@@ -21,7 +21,11 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/** sr-only = Screen Read only -> Classe criada para definir no css que um determinado elemento não aparecesse na tela para o usuário, sem que usássemos nenhuma propriedade que já o removesse, (hidden ou none), para que o leitor de tela conseguisse lê-lo. Pois apesar de não aparecer na tela, ele continua presente, dando mais acessibilidade ao site. */
+/** sr-only = Screen Read only -> Classe criada para definir no css 
+que um determinado elemento não aparecesse na tela para o usuário, 
+sem que usássemos nenhuma propriedade que já o removesse, (hidden ou none),
+para que o leitor de tela conseguisse lê-lo. Pois apesar de não aparecer na tela,
+ ele continua presente, dando mais acessibilidade ao site. */
 
 .sr-only {
   position: absolute;

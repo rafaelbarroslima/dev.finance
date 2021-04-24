@@ -1,15 +1,15 @@
 const modal = {
   open() {
     document
-    .querySelector('.modal-overlay')
-    .classList
-    .add('active')
+      .querySelector('.modal-overlay')
+      .classList
+      .add('active')
   },
   close() {
     document
-    .querySelector('.modal-overlay')
-    .classList
-    .remove('active')
+      .querySelector('.modal-overlay')
+      .classList
+      .remove('active')
   }
 }
 
@@ -67,7 +67,7 @@ const DOM = {
 
   addTransaction(transaction, index) {
     const tr = document.createElement('tr')
-    tr.innerHTML = DOM.innerHTMLTransaction(transaction)
+    tr.innerHTML = DOM.innerHTMLTransaction(transaction, index)
     tr.dataset.index = index
 
     DOM.transactionsContainer.appendChild(tr)
@@ -100,9 +100,9 @@ const DOM = {
 
 const Utils = {
   formatAmount(value) {
-    value = Number(value) * 100
+    value = value * 100
 
-    return value
+    return Math.round(value)
   },
 
   formatDate(date) {
